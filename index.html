@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Task List</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-8 mt-4">
+        <div class="card">
+          <div class="card-body">
+            <div class="input-group">
+              <input type="text" id="txtItem" class="form-control" title="title" placeholder="New Task...">
+              <div class="input-group-append">
+                <button id="btnCreate" class="btn btn-outline-primary" type="button">
+                  Add
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mt-3">
+          <div class="card-header">My List</div>
+          <ul id="myList" class="list-group list-group-flush">
+            <button id="btnClear" class="btn btn-outline-primary" type="button">
+              Clear
+            </button>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script src="tasks.js"></script>
+
+</body>
+
+</html>

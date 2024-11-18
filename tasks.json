@@ -1,0 +1,27 @@
+[
+    {
+        "id": 1,
+        "text": "Complete JavaScript project",
+        "status": "incomplete"
+    },
+    {
+        "id": 2,
+        "text": "Study for Live Coding",
+        "status": "incomplete"
+    },
+    {
+        "id": 3,
+        "text": "Get rich",
+        "status": "done"
+    },
+    {
+        "id": 4,
+        "text": "Find a Husband",
+        "status": "waiting"
+    },
+    {
+        "id": 5,
+        "text": "",
+        "status": "waiting"
+    }
+]
