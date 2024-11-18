@@ -41,7 +41,8 @@ function displayTasks() {
                         : "Mark Complete"
                     }
                 </button>
-                <button class="btn btn-danger btn-sm" onclick="deleteTask(${task.id})">Delete</button>
+                <button class="btn btn-danger btn-sm" onclick="deleteTask(${
+task.id})">Delete</button>
             </div>
         `;
 
@@ -64,7 +65,8 @@ function addTask() {
   };
 
   tasks.push(newTask);
-
+ console.log(tasks);
+ 
   //keep these here please
   saveTasks();
   taskInput.value = "";
@@ -84,7 +86,12 @@ function toggleStatus(id) {
 // Delete a task from the list
 function deleteTask(id) {
   // write the code to delete the task
-  tasks.splice(id,1)
+const index = tasks.findIndex(e => e.id === id);
+    console.log(index);
+    
+    
+    
+      tasks.splice(index, 1);
 
   //keep these here please
   saveTasks();
