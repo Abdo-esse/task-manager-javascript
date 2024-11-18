@@ -1,6 +1,8 @@
 let tasks = [];
 let countID = 5;
 const addTaskBtn = document.querySelector("#btnCreate");
+
+
 // Fetch tasks from JSON file and display them
 async function loadTasks() {
   try {
@@ -39,15 +41,14 @@ function displayTasks() {
                         : "Mark Complete"
                     }
                 </button>
-                <button class="btn btn-danger btn-sm" onclick="deleteTask(${
-                  task.id
-                })">Delete</button>
+                <button class="btn btn-danger btn-sm" onclick="deleteTask(${task.id})">Delete</button>
             </div>
         `;
 
     taskList.appendChild(taskElement);
   });
 }
+
 
 // Add a new task to the list
 function addTask() {
@@ -83,6 +84,7 @@ function toggleStatus(id) {
 // Delete a task from the list
 function deleteTask(id) {
   // write the code to delete the task
+  tasks.splice(id,1)
 
   //keep these here please
   saveTasks();
